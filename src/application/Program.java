@@ -3,6 +3,6 @@ package application;
 public class Program {
 	
 	public static void main(String[] args) {
-		System.out.println("Hello wooooord!");
+		System.out.println("Hello word!");
 	}
 }
