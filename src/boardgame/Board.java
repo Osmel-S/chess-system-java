@@ -8,7 +8,7 @@ public class Board {
 	
 	public Board(int rows, int columns) {
 		if(rows < 1 || columns < 1) {
-			throw new BoardException("Erro creating boar: there must be at least 1 row and 1 column");
+			throw new BoardException("Erro creating board: there must be at least 1 row and 1 column");
 		}
 		this.rows = rows;
 		this.columns = columns;
@@ -40,7 +40,7 @@ public class Board {
 	
 	public void placePiece(Piece piece,Position position) {
 		if(thereIsAPiece(position)) {
-			throw new BoardException("There is already a piece on position" +position);
+			throw new BoardException("There is already a piece on position " +position);
 		}
 		pieces[position.getRow()][position.getCollumn()] = piece;
 		piece.position = position; //deixa de ser nula
