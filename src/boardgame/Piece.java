@@ -16,13 +16,13 @@ public abstract class  Piece {
 		return board;
 	}
 	
-	public abstract boolean [][] possibleMoves();
+	public abstract boolean[][] possibleMoves();
 	
 	//abaixo temos dois exemplos de duas implementacoes concretas
 	//que dependem de um metodo abstrato
 	//Rook metodo,faz um gancho com a subclasse
 	public boolean possibleMove(Position position) {
-		return possibleMoves()[position.getRow()][position.getCollumn()];
+		return possibleMoves()[position.getRow()][position.getColumn()];
 	}
 	
 	
