@@ -34,10 +34,10 @@ public class Program {
 			System.out.print("Target: ");
 			ChessPosition target = UI.readChessPosition(sc);
 			
-			ChessPiece capturedPice = chessMatch.performChessMove(source, target);
+			ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
 			
-			if(capturedPice != null) {
-				captured.add(capturedPice);
+			if(capturedPiece != null) {
+				captured.add(capturedPiece);
 			}
 			}catch(ChessException e) {
 				System.out.println(e.getMessage());
